@@ -1,0 +1,50 @@
+// VARIABLES
+$color-primary-black: #000000;
+$color-primary-dark-gray: #303030;
+$color-primary-white: #ffffff;
+
+// MIXINS
+
+@mixin text-h1 {
+  font-weight: 700;
+  color: $color-primary-black;
+  letter-spacing: -0.5rem;
+}
+
+@mixin text-h2 {
+  font-weight: 700;
+  color: $color-primary-dark-gray;
+  line-height: 6.8rem;
+}
+
+@mixin text-h3 {
+  font-weight: 700;
+  color: $color-primary-black;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  letter-spacing: 0.8rem;
+}
+
+@mixin text-h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  letter-spacing: 0.4rem;
+}
+
+@mixin text-h5 {
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+@mixin text-h6 {
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+@mixin text-body {
+  font-weight: 300;
+  line-height: 2.2rem;
+}
