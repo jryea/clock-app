@@ -151,9 +151,39 @@ span {
   height: 3rem;
   width: 3rem; }
 
+.more-section {
+  position: fixed;
+  bottom: -40vh;
+  background-blend-mode: screen;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 4.5rem 2.6rem 2.4rem 2.6rem;
+  margin-left: -2.6rem; }
+
+.displayed {
+  bottom: 0; }
+
+.more-info-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem; }
+
+.more-title {
+  color: black;
+  letter-spacing: 2px;
+  font-size: 1rem; }
+
+.more-info {
+  color: black;
+  font-size: 2rem; }
+
 .quote-section-main {
   display: flex;
   align-items: flex-start; }
+
+.hidden {
+  display: none; }
 
 .quote {
   font-weight: 300;
@@ -171,7 +201,8 @@ span {
 .time-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-top: 7rem; }
 
 .time-zone {
   color: white;

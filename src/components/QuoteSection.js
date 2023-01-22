@@ -1,9 +1,9 @@
 import React from 'react';
 import refresh from '../assets/desktop/icon-refresh.svg';
 
-function QuoteSection() {
+function QuoteSection({ displayed = true }) {
   return (
-    <aside className='quote-section'>
+    <aside className={`quote-section ${displayed ? '' : 'hidden'}`}>
       <div className='quote-section-main'>
         <p className='quote'>
           "The science of operations, as drived from mathematics more

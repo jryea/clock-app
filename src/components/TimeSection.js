@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import sunIcon from '../assets/desktop/icon-sun.svg';
 
-function TimeSection() {
+function TimeSection({ handleClick, buttonClicked }) {
   return (
     <main>
       <div className='time-section'>
@@ -14,7 +14,7 @@ function TimeSection() {
           11:37<span>BST</span>
         </h1>
         <h3>In London, UK</h3>
-        <Button />
+        <Button handleClick={handleClick} buttonClicked={buttonClicked} />
       </div>
     </main>
   );

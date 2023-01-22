@@ -3,6 +3,10 @@
   align-items: flex-start;
 }
 
+.hidden {
+  display: none;
+}
+
 .quote {
   @include text-body;
   color: $color-primary-white;
