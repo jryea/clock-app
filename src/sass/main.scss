@@ -12,13 +12,22 @@ html {
 }
 
 .app {
-  background: url('assets/mobile/bg-image-daytime.jpg') rgba(0, 0, 0, 0.33);
-  background-size: contain;
-  background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   min-height: 100vh;
   padding: 3.2rem 2.6rem;
+}
+
+.app.day {
+  background: url('assets/mobile/bg-image-daytime.jpg') rgba(0, 0, 0, 0.33);
+  background-size: contain;
+  background-blend-mode: multiply;
+}
+
+.app.evening {
+  background: url('assets/mobile/bg-image-nighttime.jpg') rgba(0, 0, 0, 0.33);
+  background-size: contain;
+  background-blend-mode: multiply;
 }

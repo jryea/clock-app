@@ -2,6 +2,15 @@
   padding-top: 0.5rem;
   width: 1.6rem;
   margin-left: 1.6rem;
+  transition: all 0.1s;
+}
+
+.refresh-icon:hover {
+  cursor: pointer;
+}
+
+.refresh-icon:active {
+  // transform: rotate(360deg);
 }
 
 .sun-icon {
