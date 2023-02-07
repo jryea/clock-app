@@ -21,10 +21,13 @@ function TimeSection({ handleClick, buttonClicked, time, timezone, location }) {
             className='sun-icon'
             src={setTimeOfDay(time) === 'evening' ? moonIcon : sunIcon}
           />
-          <h4>{`Good ${setTimeOfDay(time)}`}</h4>
+          <h4>
+            {`Good ${setTimeOfDay(time)}`}
+            <span className='extra-greeting-text'>, it's currently</span>
+          </h4>
         </div>
         <h1>
-          {time.slice(0, 2) > 12 ? time.slice(0, 2) - 12 + time.slice(2) : time}
+          {time}
           <span>{timezone}</span>
         </h1>
         <h3>{`In ${location}`}</h3>

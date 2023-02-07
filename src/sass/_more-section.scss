@@ -1,12 +1,17 @@
 .more-section {
   position: fixed;
-  bottom: -40vh;
-  background-blend-mode: screen;
+  display: flex;
+  // flex-direction: column;
+  bottom: 0;
+  // background-blend-mode: screen;
   backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.75);
   width: 100%;
-  padding: 4.5rem 2.6rem 2.4rem 2.6rem;
-  margin-left: -2.6rem;
+  padding: 13% 8% 2.4rem 8%;
+  height: 25.6rem;
+  bottom: -25.6rem;
+  transition: all 0.5s;
+  margin-left: -8%;
 }
 
 .displayed {
@@ -17,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.6rem;
+  margin-right: 8rem;
 }
 
 .more-title {
@@ -28,4 +34,40 @@
 .more-info {
   color: black;
   font-size: 2rem;
+}
+
+.night {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.night .more-title {
+  color: white;
+}
+
+.night .more-info {
+  color: white;
+}
+
+@media (min-width: 488px) {
+  .more-section {
+    height: 44rem;
+    bottom: -44rem;
+  }
+
+  .displayed {
+    bottom: 0;
+  }
+
+  .more-info-block {
+    flex-direction: column;
+    margin-bottom: 4.9rem;
+  }
+
+  .more-title {
+    font-size: 1.3rem;
+  }
+
+  .more-info {
+    font-size: 4rem;
+  }
 }

@@ -15,3 +15,16 @@
   display: flex;
   align-items: center;
 }
+
+.extra-greeting-text {
+  display: none;
+  margin: 0;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+@media (min-width: 488px) {
+  .extra-greeting-text {
+    display: inline;
+  }
+}

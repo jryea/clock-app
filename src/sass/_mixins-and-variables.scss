@@ -12,13 +12,13 @@ $color-primary-white: #ffffff;
 }
 
 @mixin text-h2 {
-  font-weight: 700;
+  font-weight: 400;
   color: $color-primary-dark-gray;
   line-height: 6.8rem;
 }
 
 @mixin text-h3 {
-  font-weight: 700;
+  font-weight: 400;
   color: $color-primary-black;
   text-transform: uppercase;
   line-height: 2.8rem;

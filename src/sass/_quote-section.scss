@@ -19,3 +19,12 @@
   font-size: 1.2rem;
   color: $color-primary-white;
 }
+
+@media (min-width: 488px) {
+  .quote {
+    font-size: 1.8rem;
+  }
+  .quote-author {
+    font-size: 1.8rem;
+  }
+}

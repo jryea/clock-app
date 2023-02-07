@@ -6,9 +6,15 @@ function MoreSection({
   dayOfYear,
   dayOfWeek,
   weekNumber,
+  time,
 }) {
+  const hours = Number(time.slice(0, 2));
   return (
-    <section className={`more-section ${displayed ? 'displayed' : ''}`}>
+    <section
+      className={`more-section ${hours >= 18 ? 'night' : null} ${
+        displayed ? 'displayed' : ''
+      }`}
+    >
       <div className='more-section-left'>
         <div className='more-info-block'>
           <h4 className='more-title'>Current timezone</h4>

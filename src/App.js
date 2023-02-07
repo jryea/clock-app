@@ -85,6 +85,7 @@ function App() {
       />
       {
         <MoreSection
+          time={formatTime(time)}
           displayed={moreScreen}
           timezone={timeData?.timezone}
           dayOfYear={timeData?.day_of_year}
